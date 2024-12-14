@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:map_search/core/constants/lang_keys.dart';
 import 'package:map_search/features/bookmarks/screens/bookmarks_screen.dart';
@@ -7,7 +6,7 @@ import 'package:map_search/features/profile/screens/profile_screen.dart';
 import 'package:map_search/features/search/screens/search_screen.dart';
 
 class BottomNavBarProvider with ChangeNotifier {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
   // List of screens
   final List<Widget> screens = [

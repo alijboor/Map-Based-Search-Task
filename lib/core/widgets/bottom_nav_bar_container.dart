@@ -29,7 +29,7 @@ class BottomNavbarContainer extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(icon,
-                          color: isSelected ? Colors.amberAccent : Colors.black),
+                          color: isSelected ? Colors.amberAccent : Colors.black, size: 26,),
                       if (isSelected)
                         Text(key, style: const TextStyle(fontSize: 12)),
                     ],
