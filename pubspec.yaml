@@ -37,11 +37,16 @@ dependencies:
   cupertino_icons: ^1.0.8
   provider: ^6.1.2
   google_maps_flutter: ^2.1.8
+  dio: ^5.4.0
+  hive: ^2.2.3
+  hive_flutter:
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  hive_generator:
+  build_runner:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

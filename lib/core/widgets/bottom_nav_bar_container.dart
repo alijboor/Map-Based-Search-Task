@@ -29,7 +29,8 @@ class BottomNavbarContainer extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Icon(icon,
-                          color: isSelected ? Colors.amberAccent : Colors.black, size: 26,),
+                          color: isSelected ? Colors.amberAccent : Colors.black,
+                          size: 26),
                       if (isSelected)
                         Text(key, style: const TextStyle(fontSize: 12)),
                     ],
@@ -39,28 +40,6 @@ class BottomNavbarContainer extends StatelessWidget {
             );
           }),
         );
-        // return BottomNavigationBar(
-        //   currentIndex: provider.currentIndex,
-        //   onTap: provider.updateCurrentIndex,
-        //   items: List.generate(provider.bottomItem.length, (index) {
-        //     bool isSelected = provider.currentIndex == index;
-        //
-        //     String key = provider.bottomItem.keys.toList()[index];
-        //     IconData icon = provider.bottomItem.values.toList()[index];
-        //
-        //     return BottomNavigationBarItem(
-        //         icon: Icon(icon,
-        //             color: isSelected ? Colors.amberAccent : Colors.black),
-        //         label: '',
-        //         activeIcon: Column(
-        //           children: [
-        //             Icon(icon,
-        //                 color: isSelected ? Colors.amberAccent : Colors.black),
-        //             Text(isSelected ? key : '')
-        //           ],
-        //         ));
-        //   }),
-        // );
       },
     );
   }

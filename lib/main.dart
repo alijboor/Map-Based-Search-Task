@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:map_search/core/shared_providers/bottom_nav_bar_provider.dart';
 import 'package:map_search/core/widgets/base_scaffold.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+
   runApp(
     ChangeNotifierProvider(
       create: (_) => BottomNavBarProvider(),
