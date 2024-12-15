@@ -3,4 +3,5 @@ class LangKeys {
   static String search = 'search';
   static String bookmarks = 'bookmarks';
   static String profile = 'profile';
+  static String searchHint = 'What you are Looking for,';
 }
